@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Valores a CSV</title>
+</head>
+<body>
+    <header>
+        <h1>Wecome Mr Robin</h1>
+    </header>
+    <main>
+        <section>
+            <!-- <form action="La dirección en la base de datos a donde se envia" id="Formulario"></form> -->
+            <!-- activar esto cuando haya una dirección a donde enviar los datos -->
+            <form id="Formulario">
+                <label for="Nombre">
+                    <span>¿Cuál es tu nombre?</span>
+                    <input type="text" value="" name="nombre" placeholder="Tu nombre" id="Nombre" autocomplete="name">
+                    <!--el "id" tiene que ser el mismo que el "for" de label-->
+                </label>
+                <label for="Apellido">
+                    <span>¿Cuál es tu Apellido?</span>
+                    <input type="text" value="" name="Apellido" placeholder="Tu apellido" id="Apellido" autocomplete="name">
+                    <!-- estos elementos no llevan autocomplete porque puede inducir a error en el usuario -->
+                </label>
+                <!-- para empezar a construir la base de datos de usuarios -->
+                <label for="Email">
+                    <span>¿Cuál es tu email?</span>
+                    <input type="email" value="" name="email" placeholder="mi@mail.com" id="Email" autocomplete="email">
+                </label>
+                <label for="Elemento_1">
+                    <span>¿Cuál es tu Elemento 1?</span>
+                    <input type="number" value="" name="Elemento 1" placeholder="0,12" id="Elemento_1">
+                    <!-- estos no llevan autocomplete porque puede inducir a error en el usuario -->
+                    <span>ppm</span>
+                </label>
+                <label for="Elemento_2">
+                    <span>¿Cuál es tu Elemento 2?</span>
+                    <input type="number" value="" name="Elemento 2" placeholder="0,37" id="Elemento_2">
+                    <!-- estos elementos no llevan autocomplete porque puede inducir a error en el usuario -->
+                    <span>ppm</span>
+                </label>
+                <label for="Elemento_3">
+                    <span>¿Cuál es tu Elemento 3?</span>
+                    <input type="number" value="" name="Elemento 3" placeholder="0,55" id="Elemento_3">
+                    <!-- estos elementos no llevan autocomplete porque puede inducir a error en el usuario -->
+                    <span>ppm</span>
+                </label>
+                <label for="Elemento_4">
+                    <span>¿Cuál es tu Elemento 4?</span>
+                    <input type="number" value="" name="Elemento 4" placeholder="2,89" id="Elemento_4">
+                    <!-- estos elementos no llevan autocomplete porque puede inducir a error en el usuario -->
+                    <span>ppm</span>
+                </label>
+                <label for="Elemento_5">
+                    <span>¿Cuál es tu Elemento 5?</span>
+                    <input type="number" value="" name="Elemento 5" placeholder="4,7" id="Elemento_5">
+                    <!-- estos elementos no llevan autocomplete porque puede inducir a error en el usuario -->
+                    <span>ppm</span>
+                </label>
+                <!-- <input type="submit" name="Enviar" id="Bot_enviar"> -->
+                <!-- activar este boton cuando este lista la dirección a enviar los datos -->
+            </form>
+            <input type="button" value="ingresar" id="Bot_Enviar">
+            <div id="aqui_tabla">
+                <!-- aquí se mostrará la tabla -->
+                <table>
+                    <tr>
+                      <th>Elemento 1</th>
+                      <th>Elemento 2</th>
+                      <th>Elemento 3</th>
+                      <th>Elemento 4</th>
+                      <th>Elemento 5</th>
+                    </tr>
+                    <tr>
+                        <td>v ppm</td>
+                        <td>w ppm</td>
+                        <td>x ppm</td>
+                        <td>Y ppm</td>
+                        <td>Z ppm</td>
+                    </tr>
+                  </table>
+                  
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="./script.js"></script>
+</body>
+</html>
