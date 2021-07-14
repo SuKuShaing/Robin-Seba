@@ -35,11 +35,11 @@ function getData() {
     var etan = document.getElementById("id-etano").value;
     console.log("Aprestaste el boton");
     console.log(name + " " + lastName + " tu email es: " + mail);
-    console.log("Elemento 1: " + hidrogen);
-    console.log("Elemento 2: " + metan);
-    console.log("Elemento 3: " + acetilen);
-    console.log("Elemento 4: " + etilen);
-    console.log("Elemento 5: " + etan);
+    console.log("Hidrógeno: " + hidrogen);
+    console.log("Metano: " + metan);
+    console.log("Acetileno: " + acetilen);
+    console.log("Etileno: " + etilen);
+    console.log("Etano: " + etan);
 
     tabla_resultado.innerHTML = "<table><tr><th>Hidrogeno (H2)</th><th>Metano (CH4)</th><th>Acetileno (C2H2)</th><th>Etileno (C2H4)</th><th>Etano (C2H6)</th></tr><tr><td>" + hidrogen + " ppm</td><td>" + metan + " ppm</td><td>" + acetilen + " ppm</td><td>" + etilen + " ppm</td><td>" + etan + " ppm</td></tr></table><button onclick='alerta()'>No Presionar</button>";
 
