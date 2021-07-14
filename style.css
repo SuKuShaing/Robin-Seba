@@ -77,8 +77,14 @@ label {
     display: block;
     margin: 10px;
     padding: 20px;
-    background-color: var(--colorPrimario);
+    /* background-color: var(--colorPrimario); */
+    background: linear-gradient(to bottom, var(--colorPrimario) 0%, var(--colorSecundario) 100%);
+    /* Al parecer el degradado es muy tenue */
     border-radius: 10px;
+    /* border: 1px solid var(--colorResaltado); */
+    /* border: 3px solid linear-gradient(to bottom, var(--colorPrimario) 0%, var(--colorResaltado) 100%); */
+    /* box-shadow: 0px 0px 10px 0px rgba(255,255,255,.3); */
+    /* box-shadow: rgba(0, 156, 204, 0.2) 0px 2px 8px 0px; */
 }
 
 label[for=Nombre], label[for=Apellido] {
@@ -110,8 +116,8 @@ input {
     border-radius: 6px;
     border: 3px solid var(--colorDeFondo);
     /* border-bottom: 3px solid var(--colorPrimario); */
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
     outline: none;
     font-size: 2rem;
 }
@@ -167,3 +173,22 @@ button {
 /* ***********Etiquetas del footer ********** */
 /* ****************************************** */
 /* ****************************************** */
+
+@media (max-width: 600px) {
+    /* body {
+        background-color: var(--colorTexto);
+    } */
+    main {
+        margin: 10px;
+    }
+    /* h1 {
+        color: red;
+    } */
+    label[for=Nombre], label[for=Apellido], label[for=Email], label[for=Elemento_1], label[for=Elemento_2], label[for=Elemento_3], label[for=Elemento_4], label[for=Elemento_5] {
+        width: 100%;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+      }
+}
