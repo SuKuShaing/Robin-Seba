@@ -6,11 +6,11 @@ console.log("Estoy funcionando");
 var name;
 var lastName;
 var mail;
-var element1;
-var element2;
-var element3;
-var element4;
-var element5;
+var hidrogen;
+var metan;
+var acetilen;
+var etilen;
+var etan;
 
 
 //Obtiene el lugar donde se va poner la información
@@ -28,20 +28,20 @@ function getData() {
     var name = document.getElementById("Nombre").value;
     var lastName = document.getElementById("Apellido").value;
     var mail = document.getElementById("Email").value;
-    var element1 = document.getElementById("Elemento_1").value;
-    var element2 = document.getElementById("Elemento_2").value;
-    var element3 = document.getElementById("Elemento_3").value;
-    var element4 = document.getElementById("Elemento_4").value;
-    var element5 = document.getElementById("Elemento_5").value;
+    var hidrogen = document.getElementById("id-hidrogeno").value;
+    var metan = document.getElementById("id-Metano").value;
+    var acetilen = document.getElementById("id-acetileno").value;
+    var etilen = document.getElementById("id-etileno").value;
+    var etan = document.getElementById("id-etano").value;
     console.log("Aprestaste el boton");
     console.log(name + " " + lastName + " tu email es: " + mail);
-    console.log("Elemento 1: " + element1);
-    console.log("Elemento 2: " + element2);
-    console.log("Elemento 3: " + element3);
-    console.log("Elemento 4: " + element4);
-    console.log("Elemento 5: " + element5);
+    console.log("Elemento 1: " + hidrogen);
+    console.log("Elemento 2: " + metan);
+    console.log("Elemento 3: " + acetilen);
+    console.log("Elemento 4: " + etilen);
+    console.log("Elemento 5: " + etan);
 
-    tabla_resultado.innerHTML = "<table><tr><th>Elemento 1</th><th>Elemento 2</th><th>Elemento 3</th><th>Elemento 4</th><th>Elemento 5</th></tr><tr><td>" + element1 + " ppm</td><td>" + element2 + " ppm</td><td>" + element3 + " ppm</td><td>" + element4 + " ppm</td><td>" + element5 + " ppm</td></tr></table><button onclick='alerta()'>No Presionar</button>";
+    tabla_resultado.innerHTML = "<table><tr><th>Hidrogeno (H2)</th><th>Metano (CH4)</th><th>Acetileno (C2H2)</th><th>Etileno (C2H4)</th><th>Etano (C2H6)</th></tr><tr><td>" + hidrogen + " ppm</td><td>" + metan + " ppm</td><td>" + acetilen + " ppm</td><td>" + etilen + " ppm</td><td>" + etan + " ppm</td></tr></table><button onclick='alerta()'>No Presionar</button>";
 
     exportarTablaCSV("Elementos.csv");
 }

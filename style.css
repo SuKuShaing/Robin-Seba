@@ -97,7 +97,7 @@ label[for=Email] {
     /* background-color: yellow; */
 }
 
-label[for=Elemento_1], label[for=Elemento_2], label[for=Elemento_3], label[for=Elemento_4], label[for=Elemento_5] {
+label[for=hidrogeno], label[for=metano], label[for=acetileno], label[for=etileno], label[for=etano] {
     width: 18%;
     /* background-color: yellow; */
 }
@@ -174,7 +174,7 @@ button {
 /* ****************************************** */
 /* ****************************************** */
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     /* body {
         background-color: var(--colorTexto);
     } */
@@ -184,7 +184,7 @@ button {
     /* h1 {
         color: red;
     } */
-    label[for=Nombre], label[for=Apellido], label[for=Email], label[for=Elemento_1], label[for=Elemento_2], label[for=Elemento_3], label[for=Elemento_4], label[for=Elemento_5] {
+    label[for=Nombre], label[for=Apellido], label[for=Email], label[for=hidrogeno], label[for=metano], label[for=acetileno], label[for=etileno], label[for=etano] {
         width: 100%;
     }
     table {

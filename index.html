@@ -31,49 +31,48 @@
                     <span>¿Cuál es tu email?</span>
                     <input type="email" value="" name="email" placeholder="mi@mail.com" id="Email" autocomplete="email">
                 </label>
-                <label for="Elemento_1">
-                    <span>¿Cuál es tu Elemento 1?</span>
-                    <input type="number" value="" name="Elemento 1" placeholder="0,12" id="Elemento_1">
-                    <!-- estos no llevan autocomplete porque puede inducir a error en el usuario -->
+                <label for="hidrogeno">
+                    <span>¿Cuánto de Hidrógeno (H2)?</span>
+                    <input type="number" value="" name="Hidrogeno" placeholder="0,12" id="id-hidrogeno">
+                    <!-- estos no llevan autocomplete porque puede inducir a error en Cuánto al valor ingresado -->
+                </label>
+                <label for="metano">
+                    <span>¿Cuánto de Metano (CH4)?</span>
+                    <input type="number" value="" name="Metano" placeholder="0,37" id="id-Metano">
+                    <!--estos elementos no llevan autocomplete porque puede inducir a error en el usuario -->
                     <span>ppm</span>
                 </label>
-                <label for="Elemento_2">
-                    <span>¿Cuál es tu Elemento 2?</span>
-                    <input type="number" value="" name="Elemento 2" placeholder="0,37" id="Elemento_2">
+                <label for="acetileno">
+                    <span>¿Cuánto de Acetileno (C2H2)?</span>
+                    <input type="number" value="" name="Acetileno" placeholder="0,55" id="id-acetileno">
                     <!-- estos elementos no llevan autocomplete porque puede inducir a error en el usuario -->
                     <span>ppm</span>
                 </label>
-                <label for="Elemento_3">
-                    <span>¿Cuál es tu Elemento 3?</span>
-                    <input type="number" value="" name="Elemento 3" placeholder="0,55" id="Elemento_3">
+                <label for="etileno">
+                    <span>¿Cuánto de Etileno (C2H4)?</span>
+                    <input type="number" value="" name="Etileno" placeholder="2,89" id="id-etileno">
                     <!-- estos elementos no llevan autocomplete porque puede inducir a error en el usuario -->
                     <span>ppm</span>
                 </label>
-                <label for="Elemento_4">
-                    <span>¿Cuál es tu Elemento 4?</span>
-                    <input type="number" value="" name="Elemento 4" placeholder="2,89" id="Elemento_4">
-                    <!-- estos elementos no llevan autocomplete porque puede inducir a error en el usuario -->
-                    <span>ppm</span>
-                </label>
-                <label for="Elemento_5">
-                    <span>¿Cuál es tu Elemento 5?</span>
-                    <input type="number" value="" name="Elemento 5" placeholder="4,7" id="Elemento_5">
+                <label for="etano">
+                    <span>¿Cuánto de Etano (C2H6)?</span>
+                    <input type="number" value="" name="Etano" placeholder="4,7" id="id-etano">
                     <!-- estos elementos no llevan autocomplete porque puede inducir a error en el usuario -->
                     <span>ppm</span>
                 </label>
                 <!-- <input type="submit" name="Enviar" id="Bot_enviar"> -->
-                <!-- activar este boton cuando este lista la dirección a enviar los datos -->
+                <!-- activar este botón cuando este lista la dirección a enviar los datos -->
             </form>
             <input type="button" value="ingresar" id="Bot_Enviar">
             <div id="aqui_tabla">
                 <!-- aquí se mostrará la tabla -->
                 <table>
                     <tr>
-                      <th>Elemento 1</th>
-                      <th>Elemento 2</th>
-                      <th>Elemento 3</th>
-                      <th>Elemento 4</th>
-                      <th>Elemento 5</th>
+                      <th>Hidrógeno (H2)</th>
+                      <th>Metano (CH4)</th>
+                      <th>Acetileno (C2H2)</th>
+                      <th>Etileno (C2H4)</th>
+                      <th>Etano (C2H6)</th>
                     </tr>
                     <tr>
                         <td>v ppm</td>
@@ -82,8 +81,7 @@
                         <td>Y ppm</td>
                         <td>Z ppm</td>
                     </tr>
-                  </table>
-                  
+                </table> 
             </div>
         </section>
     </main>
